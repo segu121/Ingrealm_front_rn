@@ -1,0 +1,9 @@
+.alertDiv:empty {
+    width: 100wh;
+    min-height: 200px;
+    display: flex;
+    background-color: brown;
+    border: 1px solid black;
+	margin: 5px;
+    
+}

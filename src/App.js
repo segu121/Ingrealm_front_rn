@@ -1,14 +1,19 @@
-import React from "react";
+import React from 'react';
 import './App.css';
-import HeaderContainer from './components/containers/HeaderContainer'
+import Fontello from './css/fontello/css/fontello.css';
+import bacground from './css/img/old_mathematics/old_mathematics_@2X.png';
+import IngrealmDomRouter from './components/IngrealmDomRouter';
+import Header from './components/classComponents/Header';
+import AlertFuncComp from './components/functionsComponents/AllertsFuncComp'
+
 
 
 function App() {
   return (
-    <div className="App">
-        <div className="container-lg">
-            <HeaderContainer/>
-        </div>
+    <div className="container-fluid" >
+      <Header/>
+      <AlertFuncComp/>
+      <IngrealmDomRouter/>
     </div>
   );
 }

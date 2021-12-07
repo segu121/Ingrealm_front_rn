@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="df99fc9f-ed2d-4973-9a81-165b3e734987" name="Default Changelist" comment="">
+    <list default="true" id="f426e244-ab0b-4a27-8960-460dc677a49a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/css/animation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/css/ingrealm_icons-codes.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/css/ingrealm_icons-embedded.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/css/ingrealm_icons-ie7-codes.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/css/ingrealm_icons-ie7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/font/ingrealm_icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/font/ingrealm_icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/font/ingrealm_icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/font/ingrealm_icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/font/ingrealm_icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/containers/HeaderContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header_navbar/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header_navbar/NavbarHeaders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/some.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/headers/headers_navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/headers/headerBar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/headers/login.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/ingrealm_icons.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,68 +40,72 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="21vFsw7eBSJb7JQTrMhXENuoR2K" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="21kZ7qbn1jcO5CsrKh146SAvZlg" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../prezentacja/JedenRecordWIngredients.png" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v16.13.0/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
-  <component name="RunManager" selected="npm.start (1)">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/css" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
+      <command value="start" />
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="start" />
-      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v16.13.0/bin/node" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="npm.start (1)" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="df99fc9f-ed2d-4973-9a81-165b3e734987" name="Default Changelist" comment="" />
-      <created>1638813864764</created>
+      <changelist id="f426e244-ab0b-4a27-8960-460dc677a49a" name="Changes" comment="" />
+      <created>1638486883482</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1638813864764</updated>
-      <workItem from="1638813866887" duration="268000" />
+      <updated>1638486883482</updated>
+      <workItem from="1638486885918" duration="35000" />
+      <workItem from="1638487924288" duration="4243000" />
+      <workItem from="1638905903945" duration="789000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
