@@ -145,17 +145,17 @@
       display: none;
     }
     @font-face {
-      font-family: 'ingrealm_icons';
-      src: url('./font/ingrealm_icons.eot?36709201');
-      src: url('./font/ingrealm_icons.eot?36709201#iefix') format('embedded-opentype'),
-           url('./font/ingrealm_icons.woff?36709201') format('woff'),
-           url('./font/ingrealm_icons.ttf?36709201') format('truetype'),
-           url('./font/ingrealm_icons.svg?36709201#ingrealm_icons') format('svg');
+      font-family: 'fontello';
+      src: url('font/fontello.eot?36122693');
+      src: url('font/fontello.eot?36122693#iefix') format('embedded-opentype'),
+           url('font/fontello.woff?36122693') format('woff'),
+           url('font/fontello.ttf?36122693') format('truetype'),
+           url('font/fontello.svg?36122693#fontello') format('svg');
       font-weight: normal;
       font-style: normal;
     }
     .demo-icon {
-      font-family: "ingrealm_icons";
+      font-family: "fontello";
       font-style: normal;
       font-weight: normal;
       speak: never;
@@ -189,7 +189,8 @@
       /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
     }
     </style>
-    <link rel="stylesheet" href="css/animation.css"><!--[if IE 7]><link rel="stylesheet" href="css/" + font.fontname + "-ie7.css"><![endif]-->
+    <link rel="stylesheet" href="css/animation.css"><!--[if IE 7]>
+      <link rel="stylesheet" href="css" + font.fontname + "-ie7.css"><![endif]-->
     <script>
       function toggleCodes(on) {
         var obj = document.getElementById('icons');
@@ -204,7 +205,7 @@
   </head>
   <body>
     <div class="container header">
-      <h1>ingrealm_icons <small>font demo</small></h1>
+      <h1>fontello <small>font demo</small></h1>
       <label class="switch">
         <input type="checkbox" onclick="toggleCodes(this.checked)">show codes
       </label>
