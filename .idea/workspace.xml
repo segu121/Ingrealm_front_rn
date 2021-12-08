@@ -6,31 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f426e244-ab0b-4a27-8960-460dc677a49a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/css/animation.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/css/ingrealm_icons-codes.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/css/ingrealm_icons-embedded.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/css/ingrealm_icons-ie7-codes.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/css/ingrealm_icons-ie7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/font/ingrealm_icons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/font/ingrealm_icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/font/ingrealm_icons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/font/ingrealm_icons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fontello-e12ab944/font/ingrealm_icons.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/containers/HeaderContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header_navbar/Login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header_navbar/NavbarHeaders.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/some.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/headers/headers_navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/headers/headerBar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/headers/login.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/ingrealm_icons.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/classComponents/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/classComponents/Login.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +62,8 @@
       <updated>1638486883482</updated>
       <workItem from="1638486885918" duration="35000" />
       <workItem from="1638487924288" duration="4243000" />
-      <workItem from="1638905903945" duration="789000" />
+      <workItem from="1638905903945" duration="8624000" />
+      <workItem from="1638955812556" duration="1398000" />
     </task>
     <servers />
   </component>
