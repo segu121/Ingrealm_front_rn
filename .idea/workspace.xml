@@ -8,7 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f426e244-ab0b-4a27-8960-460dc677a49a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/classComponents/LoginForm.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/ValidatedLogForm.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/css/login_page/loginForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -16,7 +15,8 @@
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/IngrealmDomRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IngrealmDomRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/classComponents/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/classComponents/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/classComponents/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header_staff/LoginComponent.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +84,7 @@
       <workItem from="1638487924288" duration="4243000" />
       <workItem from="1638905903945" duration="8624000" />
       <workItem from="1638955812556" duration="1398000" />
-      <workItem from="1639046481228" duration="19602000" />
+      <workItem from="1639046481228" duration="20199000" />
     </task>
     <servers />
   </component>
