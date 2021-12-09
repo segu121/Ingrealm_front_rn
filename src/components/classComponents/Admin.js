@@ -6,10 +6,25 @@ class Admin extends Component {
         super(props);
     }
 
+    addIngredientForm() {
+        return (
+            <div className='ingredient-form'>
+                <form>
+                    <div className='ingName'>
+                        <label>
+                            Enter ingredient name:
+                            <input type="text"/>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        )
+    }
+
     render() {
         return (
             <div>
-                <button>Hurrraaa!!!</button>
+                {this.addIngredientForm()}
             </div>
         )
     }
