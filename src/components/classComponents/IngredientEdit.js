@@ -1,6 +1,7 @@
 import React, { useEffect, useState} from 'react';
-import { Link } from 'react-router-dom';
+import {Link, useNavigate } from 'react-router-dom';
 import { Button, Container, Form, FormGroup, Input, Label } from 'reactstrap';
+import { useParams} from "react-router";
 
 
 function IngredientEdit(props){
@@ -12,11 +13,16 @@ function IngredientEdit(props){
         INCIName: '',
         rating: '',
     });
+    let { id } = useParams();
+    const history = useNavigate();
+
 
     useEffect( () => {
-        if (props.match.params.id !== 'new') {
-            const ingredient = async () => await (await fetch(`/admin-panel/${props.match.params.id}`)).json();
-            setItem(ingredient);
+        console.log(props);
+        if (id !== 'new') {
+            fetch(`/clients/${id}`)
+                .then(response => response.json())
+                .then(data => setItem(data));
         }
     },[]);
 
@@ -24,9 +30,9 @@ function IngredientEdit(props){
         const target = e.target;
         const value = target.value;
         const name = target.name;
-        let item = {...item};
-        item[name] = value;
-        setItem(item);
+        let newItem = {...item};
+        newItem[name] = value;
+        setItem(newItem);
     }
 
     const handleSubmit = async (e) => {
@@ -41,7 +47,7 @@ function IngredientEdit(props){
             },
             body: JSON.stringify(item),
         });
-        props.history.push('/admin-panel');
+        history.push('/admin-panel');
     }
 
 
@@ -59,12 +65,12 @@ function IngredientEdit(props){
                                onChange={handleChange} autoComplete="name"/>
                     </FormGroup>
                     <FormGroup>
-                        <Label for="naturalRating">Nat. Rat.</Label>
+                        <Label for="naturalRating">Natural Rating</Label>
                         <Input type="number" name="naturalRating" id="naturalRating" value={item.naturalRating || ''}
                                onChange={handleChange} autoComplete="naturalRating"/>
                     </FormGroup>
                     <FormGroup>
-                        <Label for="description">Name</Label>
+                        <Label for="description">Description</Label>
                         <Input type="text" name="description" id="description" value={item.description || ''}
                                onChange={handleChange} autoComplete="description"/>
                     </FormGroup>
@@ -74,7 +80,7 @@ function IngredientEdit(props){
                                onChange={handleChange} autoComplete="INCIName"/>
                     </FormGroup>
                     <FormGroup>
-                        <Label for="rating">Nat. Rat.</Label>
+                        <Label for="rating">Rating</Label>
                         <Input type="number" name="rating" id="rating" value={item.rating || ''}
                                onChange={handleChange} autoComplete="rating"/>
                     </FormGroup>

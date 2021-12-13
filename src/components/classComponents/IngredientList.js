@@ -56,7 +56,7 @@ class IngredientList extends Component {
             <div>
                 <Container fluid>
                     <div className="float-right">
-                        <Button color="success" tag={Link} to="admin-panel/new">Add Ingredient</Button>
+                        <Button color="success" tag={Link} to="/admin-panel/new">Add Ingredient</Button>
                     </div>
                     <h3>Ingredients</h3>
                     <Table className="mt-4">
