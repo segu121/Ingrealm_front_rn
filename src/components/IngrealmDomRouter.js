@@ -11,10 +11,10 @@ function IngrealmDomRouter() {
     return (
         <Routes>
             <Route path="/" element={<MidContainer/>} />
-            <Route path="/login-page" element={<ValidatedLogForm/>} />
-            <Route path="/admin-panel" element={<Admin/>} />
-            <Route path='/admin-panel/:id' element={<IngredientEdit/>} />
-            <Route exact path='/admin-panel' element={IngredientList} />
+            {/*<Route path="/login-page" element={<ValidatedLogForm/>} />*/}
+            <Route path='/ingredients' element={<Admin/>} />
+            <Route path='/ingredients/:id' element={<IngredientEdit/>} />
+            <Route exact path='/ingredients' element={<IngredientList/>} />
         </Routes>
     );
 }

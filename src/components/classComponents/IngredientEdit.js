@@ -1,7 +1,8 @@
 import React, { useEffect, useState} from 'react';
-import {Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Button, Container, Form, FormGroup, Input, Label } from 'reactstrap';
-import { useParams} from "react-router";
+import { useParams, useNavigate } from "react-router";
+import axios from "axios";
 
 
 function IngredientEdit(props){
@@ -10,7 +11,7 @@ function IngredientEdit(props){
         name: '',
         naturalRating: '',
         description: '',
-        INCIName: '',
+        inciname: '',
         rating: '',
     });
     let { id } = useParams();
@@ -20,9 +21,10 @@ function IngredientEdit(props){
     useEffect( () => {
         console.log(props);
         if (id !== 'new') {
-            fetch(`/clients/${id}`)
-                .then(response => response.json())
-                .then(data => setItem(data));
+            axios.get(`/ingredients/${id}`)
+                .then((response) => {
+                    setItem(response.data)
+                });
         }
     },[]);
 
@@ -38,8 +40,7 @@ function IngredientEdit(props){
     const handleSubmit = async (e) => {
         e.preventDefault();
         // const {item} = this.state;
-
-        await fetch('/admin-panel/' + (item.id ? '/' + item.id : ''), {
+        await fetch('/ingredients/' + (item.id ? '/' + item.id : ''), {
             method: (item.id) ? 'PUT' : 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -47,7 +48,7 @@ function IngredientEdit(props){
             },
             body: JSON.stringify(item),
         });
-        history.push('/admin-panel');
+        history('../ingredients', { replace : true }); //tu było history.push('/path');
     }
 
 
@@ -75,9 +76,9 @@ function IngredientEdit(props){
                                onChange={handleChange} autoComplete="description"/>
                     </FormGroup>
                     <FormGroup>
-                        <Label for="INCIName">INCI Name</Label>
-                        <Input type="text" name="INCIName" id="INCIName" value={item.INCIName || ''}
-                               onChange={handleChange} autoComplete="INCIName"/>
+                        <Label for="inciname">INCI Name</Label>
+                        <Input type="text" name="inciname" id="inciname" value={item.inciname || ''}
+                               onChange={handleChange} autoComplete="inciname"/>
                     </FormGroup>
                     <FormGroup>
                         <Label for="rating">Rating</Label>
@@ -86,7 +87,7 @@ function IngredientEdit(props){
                     </FormGroup>
                     <FormGroup>
                         <Button color="primary" type="submit">Save</Button>{' '}
-                        <Button color="secondary" tag={Link} to="/admin-panel">Cancel</Button>
+                        <Button color="secondary" tag={Link} to="/ingredients">Cancel</Button>
                     </FormGroup>
                 </Form>
             </Container>

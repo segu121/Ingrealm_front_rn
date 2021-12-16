@@ -6,18 +6,21 @@ class IngredientList extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {ingredients: []};
+        this.state = {ingredients : []};
         this.remove = this.remove.bind(this);
     }
 
     componentDidMount() {
-        fetch('/admin-panel')
+        fetch('/ingredients')
             .then(response => response.json())
-            .then(data => this.setState({ingredients: data}));
+            .then(data => {
+                console.log(data)
+                this.setState({ingredients: data})
+            });
     }
 
     async remove(id) {
-        await fetch(`/admin-panel/${id}`, {
+        await fetch(`/ingredients/${id}`, {
             method: 'DELETE',
             headers: {
                 'Accept': 'application/json',
@@ -38,14 +41,15 @@ class IngredientList extends Component {
 
         const ingredientsList = ingredients.map(ingredient => {
             return <tr key={ingredient.id}>
+                <td>{ingredient.id}</td>
                 <td style={{whiteSpace: 'nowrap'}}>{ingredient.name}</td>
                 <td>{ingredient.naturalRating}</td>
                 <td>{ingredient.description}</td>
-                <td>{ingredient.INCIName}</td>
+                <td>{ingredient.inciname}</td>
                 <td>{ingredient.rating}</td>
                 <td>
                     <ButtonGroup>
-                        <Button size="sm" color="primary" tag={Link} to={"/admin-panel/" + ingredient.id}>Edit</Button>
+                        <Button size="sm" color="primary" tag={Link} to={"/ingredients/" + ingredient.id}>Edit</Button>
                         <Button size="sm" color="primary" onClick={() => this.remove(ingredient.id)}>Delete</Button>
                     </ButtonGroup>
                 </td>
@@ -56,7 +60,7 @@ class IngredientList extends Component {
             <div>
                 <Container fluid>
                     <div className="float-right">
-                        <Button color="success" tag={Link} to="/admin-panel/new">Add Ingredient</Button>
+                        <Button color="success" tag={Link} to="/ingredients/new">Add Ingredient</Button>
                     </div>
                     <h3>Ingredients</h3>
                     <Table className="mt-4">
