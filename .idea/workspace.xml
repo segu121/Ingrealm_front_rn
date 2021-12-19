@@ -8,20 +8,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f426e244-ab0b-4a27-8960-460dc677a49a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/ValidatedLogForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/login_page/loginForm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/ValidatedRegisterForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/IngrealmDomRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IngrealmDomRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/classComponents/Login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header_staff/LoginComponent.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -85,6 +86,7 @@
       <workItem from="1638905903945" duration="8624000" />
       <workItem from="1638955812556" duration="1398000" />
       <workItem from="1639046481228" duration="20199000" />
+      <workItem from="1639761495108" duration="62000" />
     </task>
     <servers />
   </component>
