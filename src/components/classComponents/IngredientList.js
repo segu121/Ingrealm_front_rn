@@ -50,7 +50,7 @@ class IngredientList extends Component {
                 <td>
                     <ButtonGroup>
                         <Button size="sm" color="primary" tag={Link} to={"/ingredients/" + ingredient.id}>Edit</Button>
-                        <Button size="sm" color="primary" onClick={() => this.remove(ingredient.id)}>Delete</Button>
+                        <Button size="sm" color="danger" onClick={() => this.remove(ingredient.id)}>Delete</Button>
                     </ButtonGroup>
                 </td>
             </tr>

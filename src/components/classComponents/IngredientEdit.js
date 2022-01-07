@@ -48,7 +48,7 @@ function IngredientEdit(props){
             },
             body: JSON.stringify(item),
         });
-        history('../ingredients', { replace : true }); //tu było history.push('/path');
+        history('../ingredients', { replace : true });
     }
 
 
