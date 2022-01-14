@@ -43,9 +43,10 @@ class IngredientList extends Component {
             return <tr key={ingredient.id}>
                 <td>{ingredient.id}</td>
                 <td style={{whiteSpace: 'nowrap'}}>{ingredient.name}</td>
-                <td>{ingredient.naturalRating}</td>
-                <td>{ingredient.description}</td>
                 <td>{ingredient.inciname}</td>
+                <td>{ingredient.category}</td>
+                <td>{ingredient.description}</td>
+                <td>{ingredient.naturalRating}</td>
                 <td>{ingredient.rating}</td>
                 <td>
                     <ButtonGroup>
@@ -68,10 +69,11 @@ class IngredientList extends Component {
                         <tr>
                             <th width="5%">ID</th>
                             <th width="20%">Name</th>
-                            <th width="10%">Nat. Rat.</th>
-                            <th width="30%">Description</th>
                             <th width="15%">INCI Name</th>
-                            <th width="10%">Rating</th>
+                            <th width="10%">Category</th>
+                            <th width="30%">Description</th>
+                            <th width="5%">Nat. Rat.</th>
+                            <th width="5%">Rating</th>
                             <th width="10%">Actions</th>
                         </tr>
                         </thead>
