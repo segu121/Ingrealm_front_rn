@@ -1,5 +1,5 @@
 .alertDiv:empty {
-    width: 100wh;
+    width: 100vw;
     min-height: 200px;
     display: flex;
     background-color: brown;

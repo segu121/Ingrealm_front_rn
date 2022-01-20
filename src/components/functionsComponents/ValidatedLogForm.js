@@ -3,8 +3,10 @@ import React from "react";
 import { Formik} from "formik";
 import * as Yup from 'yup';
 import axios from "axios";
-import { useNavigate } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import errors from "./Errors";
+import '../../css/login_page/loginPage.css'
+import {Col, Row} from "react-bootstrap";
 
 
 
@@ -15,7 +17,7 @@ const ValidatedLogForm = () => (
             console.log("Submitting");
 
             fetch("to-login",{
-                method: "POSt",
+                method: "POST",
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify(values),
             })
@@ -47,38 +49,54 @@ const ValidatedLogForm = () => (
             const {values, touched, errors, isSubmitting, handleBlur, handleSubmit, handleChange} = props;
             return (
                 <div className="container-fluid" >
-                    <div className="login-page">
-                        <form onSubmit={handleSubmit}>
-                            <label htmlFor="email">Email</label>
-                            <input
-                                name="email"
-                                type="text"
-                                placeholder="Enter your email"
-                                value={values.email}
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                className={errors.email && touched.email &&"errors"}
-                            />
-                            {errors.email && touched.email && (
-                                <div className="input-feedback">{errors.email}</div>
-                            )}
-                            <label htmlFor="email">Password</label>
-                            <input
-                                name="pass"
-                                type="password"
-                                placeholder="Enter your password"
-                                value={values.pass}
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                className={errors.pass && touched.pass &&"errors"}
-                            />
-                            {errors.pass && touched.pass && (
-                                <div className="input-feedback">{errors.pass}</div>
-                            )}
-                            <div className="Login-button">
-                                <button type="submit" disabled={isSubmitting}>Go</button>
+                    <div className="loginPage">
+                        <div className="formsContainer">
+                            <div className="leftBar"></div>
+                            <div>
+                                <form onSubmit={handleSubmit}>
+                                    <label htmlFor="email">Email</label>
+                                    <input
+                                        name="email"
+                                        type="text"
+                                        placeholder="Enter your email"
+                                        value={values.email}
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        className={errors.email && touched.email &&"errors"}
+                                    />
+                                    {errors.email && touched.email && (
+                                        <div className="input-feedback">{errors.email}</div>
+                                    )}
+                                    <label htmlFor="email">Password</label>
+                                    <input
+                                        name="pass"
+                                        type="password"
+                                        placeholder="Enter your password"
+                                        value={values.pass}
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        className={errors.pass && touched.pass &&"errors"}
+                                    />
+                                    {errors.pass && touched.pass && (
+                                        <div className="input-feedback">{errors.pass}</div>
+                                    )}
+                                    <div className="LoginButton">
+                                        <Row>
+                                            <Col md={4}>
+                                                <button type="submit" disabled={isSubmitting}>Go</button>
+                                            </Col>
+                                            <Col>
+                                                <Link to={"/forget"} style={{textDecoration: "none", color: "#00FF00"}}>
+                                                    <span>Forget password ?</span>
+                                                </Link>
+                                            </Col>
+                                        </Row>
+                                    </div>
+
+                                </form>
                             </div>
-                        </form>
+                            <div className="leftBar"></div>
+                        </div>
                     </div>
                 </div>
             );

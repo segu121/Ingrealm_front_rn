@@ -1,6 +1,7 @@
 .midContainer {
-    
-    width: 100wh;
+    background-color: #61dafb;
+
+    width: 90vm;
     min-height: 800px;
     text-align: center;
     margin-top: 10px;

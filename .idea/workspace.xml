@@ -8,16 +8,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb2815ed-35c1-4228-a0eb-d2412f5ff724" name="Default Changelist" comment="added imageLoader package with not implemented preprocessing yet, change delete color button and comment redundant IngredientList route">
+    <list default="true" id="f426e244-ab0b-4a27-8960-460dc677a49a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/classComponents/IngredientEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/classComponents/IngredientEdit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/classComponents/IngredientList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/classComponents/IngredientList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/imageLoader/imageLoader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/imageLoader/imageLoader.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/imageLoader/imageLoader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/imageLoader/imageLoader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/ScanButtonWithText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/ScanButtonWithText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/homePage/centralButtonCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/homePage/centralButtonCss.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -52,6 +63,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last.edited.regexp" value="Sample Text" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ELPG_Ingrealm" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/imageLoader" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -69,6 +82,9 @@
       <recent name="E:\Dev\Advanced\Ingrealm_front_rn\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements" />
+      <recent name="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements" />
+      <recent name="$PROJECT_DIR$/src/css/homePage" />
       <recent name="$PROJECT_DIR$/src/css" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$" />
@@ -125,6 +141,24 @@
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
       <updated>1639264504574</updated>
+      <workItem from="1639761495108" duration="62000" />
+      <workItem from="1639911917921" duration="686000" />
+      <workItem from="1640895910972" duration="599000" />
+      <workItem from="1641068813446" duration="9411000" />
+      <workItem from="1641210332619" duration="16355000" />
+      <workItem from="1641492284978" duration="5010000" />
+      <workItem from="1641553348222" duration="1240000" />
+      <workItem from="1641641017640" duration="5317000" />
+      <workItem from="1641723136770" duration="14735000" />
+      <workItem from="1641810885945" duration="12913000" />
+      <workItem from="1641924266812" duration="12390000" />
+      <workItem from="1642003317895" duration="9104000" />
+      <workItem from="1642090042840" duration="12198000" />
+      <workItem from="1642248484542" duration="612000" />
+      <workItem from="1642448171126" duration="29000" />
+      <workItem from="1642450395857" duration="1641000" />
+      <workItem from="1642528337133" duration="289000" />
+      <workItem from="1642678783330" duration="1238000" />
     </task>
     <task id="LOCAL-00002" summary="working IngrealmEdit and IngredientList.js">
       <created>1639426739269</created>

@@ -1,0 +1,23 @@
+.homePageContainer{
+    margin-top: 10px;
+    min-width: 95vw;
+    min-height: 2000px;
+    display: block;
+}
+
+#topText {
+    width: 99%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#topContent {
+    clear: both;
+    width: 99%;
+    height: 1400px;
+    display: grid;
+    justify-items: center;
+}
