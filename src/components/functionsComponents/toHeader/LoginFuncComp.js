@@ -2,7 +2,7 @@ import React from 'react';
 import HeaderStyle from '../../../css/headers/headerBar.module.css';
 
 
-function LoginFuncComp(params) {
+function LoginFuncComp() {
 
 
 

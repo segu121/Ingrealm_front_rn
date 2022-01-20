@@ -14,7 +14,7 @@ class Header extends Component{
         super(props);
 
         this.state = {
-            urlTochange: null
+            urlToChange: null
         }
     }
 
@@ -86,7 +86,6 @@ class Header extends Component{
     render() {
         return (
             <header>
-                {this.getUrlPathName}
                 <div className={HeaderStyle.headerContainer}>
                     <Container fluid>
                         <Row>
@@ -97,7 +96,6 @@ class Header extends Component{
                                     </Link>
                                 </div>
                             </Col>
-                                {this.state.urlTochange}
                             <Col>
                             </Col>
                             <Col className={HeaderStyle.colWithTwoDiv}>
@@ -112,7 +110,6 @@ class Header extends Component{
                                     </Link>
                                 </div>
                             </Col>
-                            {this.changeDivs()}
                         </Row>
                     </Container>
                 </div>

@@ -8,9 +8,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f426e244-ab0b-4a27-8960-460dc677a49a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/ValidatedRegisterForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/containers/HomePageMidContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/footer/FooterFunctionComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/ButtonTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/CentralButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/LeftButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/RightBotomBtn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/TextOrUserInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/TextTopRight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/TopDivFancyText.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/image/ImgToTopGrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/textDivs/DescriptionApp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/textDivs/FourthText.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/textDivs/SecondText.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/textDivs/TextToTopLeft.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/textDivs/ThirdText.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/textDivs/WhatIsDiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/JsTextChange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/ScanButtonWithText.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/UseMove.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/elements/TextLeft.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/elements/TextRight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/homePage/WriteTextAnimation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/homePage/centralButtonCss.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/homePage/homePageContainer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/homePage/scanText.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/homePage/textAnimation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/homePage/textAnimationTopDiv.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/homePage/topGrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/img/kolookolo/abstract-background-geometric-design-vector-illustration-geometric-tesselation-colored-surface-stained-glass-window-style-abstract-color-blur.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/img/kolookolo/abstract-background-geometric-design-vector-illustration-geometric-tesselation-colored-surface-stained-glass-window-style-abstract-color-blur/585.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/img/kolookolo/abstract-background-geometric-design-vector-illustration-geometric-tesselation-colored-surface-stained-glass-window-style-abstract-color-blur/License free.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/img/kolookolo/abstract-background-geometric-design-vector-illustration-geometric-tesselation-colored-surface-stained-glass-window-style-abstract-color-blur/License premium.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/login_page/loginPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/IngrealmDomRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IngrealmDomRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/classComponents/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/classComponents/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/ValidatedLogForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/ValidatedLogForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/toHeader/LoginFuncComp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/toHeader/LoginFuncComp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/headers/headerBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/headers/headerBar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/login_page/alert.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/login_page/alert.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/midContainer/midContainer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/midContainer/midContainer.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +63,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -49,6 +93,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last.edited.regexp" value="Sample Text" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ELPG_Ingrealm" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -59,9 +104,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements" />
+      <recent name="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements" />
+      <recent name="$PROJECT_DIR$/src/css/homePage" />
       <recent name="$PROJECT_DIR$/src/css" />
       <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -87,6 +134,22 @@
       <workItem from="1638955812556" duration="1398000" />
       <workItem from="1639046481228" duration="20199000" />
       <workItem from="1639761495108" duration="62000" />
+      <workItem from="1639911917921" duration="686000" />
+      <workItem from="1640895910972" duration="599000" />
+      <workItem from="1641068813446" duration="9411000" />
+      <workItem from="1641210332619" duration="16355000" />
+      <workItem from="1641492284978" duration="5010000" />
+      <workItem from="1641553348222" duration="1240000" />
+      <workItem from="1641641017640" duration="5317000" />
+      <workItem from="1641723136770" duration="14735000" />
+      <workItem from="1641810885945" duration="12913000" />
+      <workItem from="1641924266812" duration="12390000" />
+      <workItem from="1642003317895" duration="9104000" />
+      <workItem from="1642090042840" duration="12198000" />
+      <workItem from="1642248484542" duration="612000" />
+      <workItem from="1642448171126" duration="29000" />
+      <workItem from="1642450395857" duration="1641000" />
+      <workItem from="1642528337133" duration="289000" />
     </task>
     <servers />
   </component>
