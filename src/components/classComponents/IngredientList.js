@@ -43,14 +43,15 @@ class IngredientList extends Component {
             return <tr key={ingredient.id}>
                 <td>{ingredient.id}</td>
                 <td style={{whiteSpace: 'nowrap'}}>{ingredient.name}</td>
-                <td>{ingredient.naturalRating}</td>
-                <td>{ingredient.description}</td>
                 <td>{ingredient.inciname}</td>
+                <td>{ingredient.category}</td>
+                <td>{ingredient.description}</td>
+                <td>{ingredient.naturalRating}</td>
                 <td>{ingredient.rating}</td>
                 <td>
                     <ButtonGroup>
                         <Button size="sm" color="primary" tag={Link} to={"/ingredients/" + ingredient.id}>Edit</Button>
-                        <Button size="sm" color="primary" onClick={() => this.remove(ingredient.id)}>Delete</Button>
+                        <Button size="sm" color="danger" onClick={() => this.remove(ingredient.id)}>Delete</Button>
                     </ButtonGroup>
                 </td>
             </tr>
@@ -68,10 +69,11 @@ class IngredientList extends Component {
                         <tr>
                             <th width="5%">ID</th>
                             <th width="20%">Name</th>
-                            <th width="10%">Nat. Rat.</th>
-                            <th width="30%">Description</th>
                             <th width="15%">INCI Name</th>
-                            <th width="10%">Rating</th>
+                            <th width="10%">Category</th>
+                            <th width="30%">Description</th>
+                            <th width="5%">Nat. Rat.</th>
+                            <th width="5%">Rating</th>
                             <th width="10%">Actions</th>
                         </tr>
                         </thead>

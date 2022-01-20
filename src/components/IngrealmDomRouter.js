@@ -5,6 +5,7 @@ import ValidatedLogForm from "./functionsComponents/ValidatedLogForm";
 import Admin from './classComponents/Admin';
 import IngredientEdit from "./classComponents/IngredientEdit";
 import IngredientList from "./classComponents/IngredientList";
+import ImageLoader from "./imageLoader/imageLoader";
 
 
 function IngrealmDomRouter() {
@@ -14,7 +15,8 @@ function IngrealmDomRouter() {
             {/*<Route path="/login-page" element={<ValidatedLogForm/>} />*/}
             <Route path='/ingredients' element={<Admin/>} />
             <Route path='/ingredients/:id' element={<IngredientEdit/>} />
-            <Route exact path='/ingredients' element={<IngredientList/>} />
+            {/*<Route exact path='/ingredients' element={<IngredientList/>} />*/}
+            <Route path="/scan" element={<ImageLoader/>}/>
         </Routes>
     );
 }
