@@ -4,8 +4,8 @@
     border-radius: 50%;
     border: 2px solid white;
     /*border: 0;*/
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    color: deeppink;
+    box-shadow: 0 3px 6px dodgerblue, 0 3px 6px rgba(0,0,0,0.23);
+    color: yellow;
     cursor: pointer;
     font-size: 1.2em;
     /*margin-top: 20px;*/
@@ -20,7 +20,7 @@
     color: white;
 }
 .pattern {
-    background: #999999;
+    background: white;
     height: 100%;
     left: 0;
     position: absolute;
@@ -43,6 +43,12 @@
 .bg5 {
     background-image: url("../img/bg6-mniejszy.png");
 }
+
+.bg6 {
+    background-image: url("../img/INCIButton.png");
+
+}
+
 .inner {
     height: 500px;
     width: 500px;
@@ -53,12 +59,12 @@
 }
 .target {
     position: absolute;
-    --x: 0;
-    --y: 0;
-    /*background-position: 50% 50%;*/
+    background-position: 75px 75px;
+    background-repeat: no-repeat;
+    background-size: inherit;
     /*background-position: var(--x) var(--y);*/
     /*transform: translate(var(--x), var(--y));*/
-    transform: translate(var(--x), var(--y));
+
 }
 
 /*.target:hover {*/

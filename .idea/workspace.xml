@@ -8,52 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f426e244-ab0b-4a27-8960-460dc677a49a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/containers/HomePageMidContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/footer/FooterFunctionComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGrid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/ButtonTest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/CentralButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/LeftButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/RightBotomBtn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/TextOrUserInfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/TextTopRight.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/TopDivFancyText.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/image/ImgToTopGrid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/textDivs/DescriptionApp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/textDivs/FourthText.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/textDivs/SecondText.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/textDivs/TextToTopLeft.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/textDivs/ThirdText.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/textDivs/WhatIsDiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/JsTextChange.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/ScanButtonWithText.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/UseMove.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/elements/TextLeft.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/elements/TextRight.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/homePage/WriteTextAnimation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/homePage/centralButtonCss.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/homePage/homePageContainer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/homePage/scanText.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/homePage/textAnimation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/homePage/textAnimationTopDiv.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/homePage/topGrid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/img/kolookolo/abstract-background-geometric-design-vector-illustration-geometric-tesselation-colored-surface-stained-glass-window-style-abstract-color-blur.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/img/kolookolo/abstract-background-geometric-design-vector-illustration-geometric-tesselation-colored-surface-stained-glass-window-style-abstract-color-blur/585.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/img/kolookolo/abstract-background-geometric-design-vector-illustration-geometric-tesselation-colored-surface-stained-glass-window-style-abstract-color-blur/License free.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/img/kolookolo/abstract-background-geometric-design-vector-illustration-geometric-tesselation-colored-surface-stained-glass-window-style-abstract-color-blur/License premium.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/login_page/loginPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/IngrealmDomRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IngrealmDomRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/classComponents/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/classComponents/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/ValidatedLogForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/ValidatedLogForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/toHeader/LoginFuncComp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/toHeader/LoginFuncComp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/headers/headerBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/headers/headerBar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/login_page/alert.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/login_page/alert.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/midContainer/midContainer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/midContainer/midContainer.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/ScanButtonWithText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/ScanButtonWithText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/homePage/centralButtonCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/homePage/centralButtonCss.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +107,7 @@
       <workItem from="1642448171126" duration="29000" />
       <workItem from="1642450395857" duration="1641000" />
       <workItem from="1642528337133" duration="289000" />
+      <workItem from="1642678783330" duration="1238000" />
     </task>
     <servers />
   </component>

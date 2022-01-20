@@ -42,12 +42,12 @@ function ScanButtonWithText() {
 
             </div>
             <div className="circle2">
-                <button className="button" onMouseMove={handleMouseMove} >
+                <button className="button"  >
                     <div className="pattern" >
-                        <div className="target inner bg5" >
+                        <div className="target inner bg6" >
                         </div>
                     </div>
-                    <div className="text">Hover me I'm brilliant x: {x} y: {y}</div>
+                    <div className="text"></div>
                 </button>
             </div>
 
