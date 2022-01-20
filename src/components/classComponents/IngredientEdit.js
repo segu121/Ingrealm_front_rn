@@ -1,8 +1,9 @@
-import React, { useEffect, useState} from 'react';
-import { Link } from 'react-router-dom';
-import { Button, Container, Form, FormGroup, Input, Label } from 'reactstrap';
-import { useParams, useNavigate } from "react-router";
+import React, {useEffect, useState} from 'react';
+import {Link} from 'react-router-dom';
+import {Button, Container, Form, FormGroup, Input, Label} from 'reactstrap';
+import {useNavigate, useParams} from "react-router";
 import axios from "axios";
+import Creatable from 'react-select/creatable';
 
 
 function IngredientEdit(props){
@@ -15,8 +16,31 @@ function IngredientEdit(props){
         naturalRating: '',
         rating: '',
     });
+
+    let [category, setCategory] = useState([]);
+
     let { id } = useParams();
     const history = useNavigate();
+
+    const aquaticCreatures = [
+        { label: 'Shark', value: 'Shark' },
+        { label: 'Dolphin', value: 'Dolphin' },
+        { label: 'Whale', value: 'Whale' },
+        { label: 'Octopus', value: 'Octopus' },
+        { label: 'Crab', value: 'Crab' },
+        { label: 'Lobster', value: 'Lobster' },
+    ];
+
+    const categories = axios.get(`/categories`).then((response) => {
+          let listCategory = [];
+          console.log(response);
+          for (let i = 0; i <= response.data.length; i++) {
+              listCategory.push(response.data[i].name.toString());
+              console.log("index: " + i + "  " + response.data[i].value);
+          }
+          return listCategory;
+      })
+
 
 
     useEffect( () => {
@@ -41,16 +65,13 @@ function IngredientEdit(props){
     const handleSubmit = async (e) => {
         e.preventDefault();
         // const {item} = this.state;
-        const request = {...item};
-        request.categories = item.categories.split(",");
-        console.log(request);
         await fetch('/ingredients/' + (item.id ? '/' + item.id : ''), {
             method: (item.id) ? 'PUT' : 'POST',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(request),
+            body: JSON.stringify(item),
         });
         history('../ingredients', { replace : true });
     }
@@ -80,9 +101,16 @@ function IngredientEdit(props){
                                onChange={handleChange} autoComplete="description"/>
                     </FormGroup>
                     <FormGroup>
-                        <Label for="inciname">Category</Label>
-                        <Input type="text" name="categories" id="categories" value={item.categories || ''}
-                               onChange={handleChange} autoComplete="categories"/>
+                        <Label for="categories">Category</Label>
+                        {/*<Input type="text" name="categories" id="categories" value={item.categories || ''}*/}
+                        {/*       onChange={handleChange} autoComplete="categories"/>*/}
+                        <Creatable
+                            name="categories" id="categories"
+                            options={categories}
+                            isMulti
+                            // onChange={handleChange}
+                            onChange={(opt, meta) => console.log(opt, meta)}
+                        />
                     </FormGroup>
                     <FormGroup>
                         <Label for="naturalRating">Natural Rating</Label>
