@@ -10,7 +10,7 @@ function IngredientEdit(props){
     let [item, setItem] = useState({
         name: '',
         inciname: '',
-        category: '',
+        categories: '',
         description: '',
         naturalRating: '',
         rating: '',
@@ -41,13 +41,16 @@ function IngredientEdit(props){
     const handleSubmit = async (e) => {
         e.preventDefault();
         // const {item} = this.state;
+        const request = {...item};
+        request.categories = item.categories.split(",");
+        console.log(request);
         await fetch('/ingredients/' + (item.id ? '/' + item.id : ''), {
             method: (item.id) ? 'PUT' : 'POST',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(item),
+            body: JSON.stringify(request),
         });
         history('../ingredients', { replace : true });
     }
@@ -78,8 +81,8 @@ function IngredientEdit(props){
                     </FormGroup>
                     <FormGroup>
                         <Label for="inciname">Category</Label>
-                        <Input type="text" name="category" id="category" value={item.category || ''}
-                               onChange={handleChange} autoComplete="category"/>
+                        <Input type="text" name="categories" id="categories" value={item.categories || ''}
+                               onChange={handleChange} autoComplete="categories"/>
                     </FormGroup>
                     <FormGroup>
                         <Label for="naturalRating">Natural Rating</Label>
