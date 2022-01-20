@@ -6,7 +6,7 @@ import TextTransition, {presets} from "react-text-transition";
 
 
 function TextRight () {
-    const textList = ["Zrób", "Zobacz", "Przemyśl"]
+    const textList = ["ZRÓB", "ZOBACZ", "PRZEMYŚL"]
     const {index} = useContext(TextContext);
 
 

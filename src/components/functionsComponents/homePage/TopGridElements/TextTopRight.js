@@ -30,19 +30,19 @@ function TextTopRight () {
     return (
         <span className="TextTopRight">
             <div className="textBody">
-                    <span className="headerTextInTR">
+                    <div className="headerTextInTR">
                         <h1>
-                            Ingrealm <br/>
-                            podpowie Ci
+                            Ingrealm
                             {/*<TextTransition text={headerText[0 % headerText.length]} springConfig={presets.gentle}/>*/}
                             {/*<TextTransition text={text[0 % text[0].length]} springConfig={ presets.wobbly }/>*/}
                         </h1>
-                    </span>
-                    <span>
+                    </div>
+
+                    <div className="changingTextDiv">
                         <p className="text">
                             <TextTransition text={text[0 % text[0].length]} springConfig={ presets.slow }/>
                         </p>
-                    </span>
+                    </div>
             </div>
         </span>
 

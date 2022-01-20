@@ -5,7 +5,15 @@ import WhatIsDiv from "./textDivs/WhatIsDiv";
 import {element} from "prop-types";
 
 function TopDivFancyText() {
-    let wordsList = ["Weź kosmetyk", "Zrób zdjęcie etykiety", "Zobacz ocenę"];
+    let wordsList = [
+        "Aplikacja rozszyfrowująca produkty kosmetyczne i polecająca zdrowe i ekologiczne alternatywy",
+        "Ocena produktu i rekomendacja zdrowych alternatyw",
+        "Dostęp do wielu informacji o składnikach produktu i zrozumienie jego oceny",
+        "Super szybkie i wielokierunkowe skanowanie w celu znalezienia produktu w bazie danych",
+        "Przeanalizuj listę składników bezpośrednio",
+        "Bezpośrednio analizuj listę składników za pomocą zdjęcia",
+        "Bez reklam, za darmo, w 100% niezależne"
+    ];
     let err = "err";
     const [index, setIndex] = useState(0);
 
@@ -26,7 +34,7 @@ function TopDivFancyText() {
     //     []);
 
     useEffect(() => {
-        const intervalId = setInterval(shuffle, 4000)
+        const intervalId = setInterval(shuffle, 6000)
 
         return () => clearInterval(intervalId)
     }, [shuffle])

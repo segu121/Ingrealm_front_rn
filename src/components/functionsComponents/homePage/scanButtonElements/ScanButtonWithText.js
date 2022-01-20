@@ -26,7 +26,7 @@ function ScanButtonWithText() {
     }
 
     useEffect(() => {
-        const IntervalId = setInterval(changeIndex, 4000);
+        const IntervalId = setInterval(changeIndex, 5000);
         return () => clearInterval(IntervalId);
     }, [changeIndex])
 

@@ -1,0 +1,23 @@
+.TextBetweenContainer {
+    width: 99%;
+    height: 300px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.textToBetween{
+    display: flex;
+    width: 40%;
+    height: 99%;
+
+    border-radius: 15px;
+    background-color: #f1fff8;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: justify;
+    font-size: 20px;
+
+}

@@ -25,7 +25,11 @@
 }
 
 .headerTextInTR {
+    background-color: #f1fff8;
+    border-radius: 15px;
     text-align: center;
+    color: dodgerblue;
+
 }
 p{
     font-size: 20px;

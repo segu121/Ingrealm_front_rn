@@ -8,7 +8,7 @@ function LoginFuncComp() {
 
     return (
         <div className={HeaderStyle.iconContainerHeader}>   
-            <span>Log in</span>
+            <span>ZALOGUJ</span>
         </div>
     );
     
