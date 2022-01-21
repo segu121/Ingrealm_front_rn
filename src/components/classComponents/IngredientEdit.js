@@ -6,44 +6,40 @@ import axios from "axios";
 import Creatable from 'react-select/creatable';
 
 
-function IngredientEdit(props){
+function IngredientEdit(props) {
 
     let [item, setItem] = useState({
         name: '',
         inciname: '',
-        categories: '',
+        // categories: '',
         description: '',
         naturalRating: '',
         rating: '',
     });
 
-    let [category, setCategory] = useState([]);
+    const [categoryHook, setCategoryHook] = useState([]);
 
-    let { id } = useParams();
+    let {id} = useParams();
     const history = useNavigate();
 
     const aquaticCreatures = [
-        { label: 'Shark', value: 'Shark' },
-        { label: 'Dolphin', value: 'Dolphin' },
-        { label: 'Whale', value: 'Whale' },
-        { label: 'Octopus', value: 'Octopus' },
-        { label: 'Crab', value: 'Crab' },
-        { label: 'Lobster', value: 'Lobster' },
+        {label: 'Shark', value: 'Shark'},
+        {label: 'Dolphin', value: 'Dolphin'},
+        {label: 'Whale', value: 'Whale'},
+        {label: 'Octopus', value: 'Octopus'},
+        {label: 'Crab', value: 'Crab'},
+        {label: 'Lobster', value: 'Lobster'},
     ];
 
-    const categories = axios.get(`/categories`).then((response) => {
-          let listCategory = [];
-          console.log(response);
-          for (let i = 0; i <= response.data.length; i++) {
-              listCategory.push(response.data[i].name.toString());
-              console.log("index: " + i + "  " + response.data[i].value);
-          }
-          return listCategory;
-      })
+
+    React.useEffect(() => {
+        axios.get(`/categories`).then((response) => {
+            setCategoryHook(response.data)
+        })
+    }, []);
 
 
-
-    useEffect( () => {
+    useEffect(() => {
         console.log(props);
         if (id !== 'new') {
             axios.get(`/ingredients/${id}`)
@@ -51,7 +47,7 @@ function IngredientEdit(props){
                     setItem(response.data)
                 });
         }
-    },[]);
+    }, []);
 
     const handleChange = (e) => {
         const target = e.target;
@@ -73,15 +69,15 @@ function IngredientEdit(props){
             },
             body: JSON.stringify(item),
         });
-        history('../ingredients', { replace : true });
+        history('../ingredients', {replace: true});
     }
 
 
-        // const {item} = this.state;
-        const title = <h2>{item.id ? 'Edit Ingredient' : 'Add Ingredient'}</h2>;
+    // const {item} = this.state;
+    const title = <h2>{item.id ? 'Edit Ingredient' : 'Add Ingredient'}</h2>;
 
-        return (
-            <div>
+    return (
+        <div>
             <Container>
                 {title}
                 <Form onSubmit={handleSubmit}>
@@ -106,7 +102,10 @@ function IngredientEdit(props){
                         {/*       onChange={handleChange} autoComplete="categories"/>*/}
                         <Creatable
                             name="categories" id="categories"
-                            options={categories}
+                            options={categoryHook.map(category => ({
+                                            "label": category.name,
+                                            "value": category.name
+                                        }))}
                             isMulti
                             // onChange={handleChange}
                             onChange={(opt, meta) => console.log(opt, meta)}
@@ -129,6 +128,7 @@ function IngredientEdit(props){
                 </Form>
             </Container>
         </div>
-        );
+    );
 }
+
 export default IngredientEdit;
