@@ -3,107 +3,103 @@ import React from "react";
 import { Formik} from "formik";
 import * as Yup from 'yup';
 import axios from "axios";
-import {Link, useNavigate} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import errors from "./Errors";
 import '../../css/login_page/loginPage.css'
 import {Col, Row} from "react-bootstrap";
 
 
 
-const ValidatedLogForm = () => (
-    <Formik
-        initialValues={{email: "", pass: ""}}
-        onSubmit={(values, {setSubmitting}) => {
-            console.log("Submitting");
+function ValidatedLogForm () {
 
-            fetch("to-login",{
-                method: "POST",
-                headers: {"Content-Type": "application/json"},
-                body: JSON.stringify(values),
-            })
-                .then((response) => {
-                    // eslint-disable-next-line react-hooks/rules-of-hooks
-                    let history = useNavigate();
-                    if (response) {
-                        setTimeout(() => {
-                            history("/", {logged: true})
-                        }, 500)
+    return (
+        <Formik
+            initialValues={{email: "", pass: ""}}
+            onSubmit={(values, {setSubmitting}) => {
+                console.log("Submitting");
+                setSubmitting(true)
+                axios.post("login-page", values).then((response) => {
+
+                    if (response.status === 200) {
+
                     } else {
-                        errors.pass("Email or password is invalid")
+                        errors.apply({stat: "Invalid password or email"})
+                        setSubmitting(false)
                     }
-                });
-        }}
-        validationSchema={ Yup.object().shape({
-            email: Yup.string()
-                .email()
-                .required("Required"),
-            pass: Yup.string()
-                .required("Required")
-                .min(8, "Password is to short - should be 8 characters minimum")
-                .matches(/(?=.*[0-9])/, "Password must contain a number")
+                })
+            }}
+            validationSchema={Yup.object().shape({
+                email: Yup.string()
+                    .email()
+                    .required("Required"),
+                pass: Yup.string()
+                    .required("Required")
+                    .min(8, "Password is to short - should be 8 characters minimum")
+                    .matches(/(?=.*[0-9])/, "Password must contain a number")
+            })}>
 
+            {(props) => {
+                const {values, touched, errors, isSubmitting, handleBlur, handleSubmit, handleChange} = props;
+                return (
+                    <div className="container-fluid">
+                        <div className="loginPage">
+                            <div className="formsContainer">
+                                <div className="leftBar"/>
+                                <div>
+                                    <form onSubmit={handleSubmit}>
+                                        <label htmlFor="email">Email</label>
+                                        <input
+                                            name="email"
+                                            type="text"
+                                            placeholder="Enter your email"
+                                            value={values.email}
+                                            onChange={handleChange}
+                                            onBlur={handleBlur}
+                                            className={errors.email && touched.email && "errors"}
+                                        />
+                                        {errors.email && touched.email && (
+                                            <div className="input-feedback">{errors.email}</div>
+                                        )}
+                                        <label htmlFor="email">Password</label>
+                                        <input
+                                            name="pass"
+                                            type="password"
+                                            placeholder="Enter your password"
+                                            value={values.pass}
+                                            onChange={handleChange}
+                                            onBlur={handleBlur}
+                                            className={errors.pass && touched.pass && "errors"}
+                                        />
+                                        {errors.pass && touched.pass && (
+                                            <div className="input-feedback">{errors.pass}</div>
+                                        )}
+                                        <div className="LoginButton">
+                                            {errors.stat && (
+                                                <div className="input-feedback">{errors.stat}</div>
+                                            )}
+                                            <Row>
+                                                <Col md={4}>
+                                                    <button type="submit" disabled={isSubmitting}>Go</button>
+                                                </Col>
+                                                <Col>
+                                                    <Link to={"/forget"} style={{textDecoration: "none", color: "#00FF00"}}>
+                                                        <span>Forget password ?</span>
+                                                    </Link>
+                                                </Col>
+                                            </Row>
+                                        </div>
 
-        })}>
-
-        {(props )=> {
-            const {values, touched, errors, isSubmitting, handleBlur, handleSubmit, handleChange} = props;
-            return (
-                <div className="container-fluid" >
-                    <div className="loginPage">
-                        <div className="formsContainer">
-                            <div className="leftBar"></div>
-                            <div>
-                                <form onSubmit={handleSubmit}>
-                                    <label htmlFor="email">Email</label>
-                                    <input
-                                        name="email"
-                                        type="text"
-                                        placeholder="Enter your email"
-                                        value={values.email}
-                                        onChange={handleChange}
-                                        onBlur={handleBlur}
-                                        className={errors.email && touched.email &&"errors"}
-                                    />
-                                    {errors.email && touched.email && (
-                                        <div className="input-feedback">{errors.email}</div>
-                                    )}
-                                    <label htmlFor="email">Password</label>
-                                    <input
-                                        name="pass"
-                                        type="password"
-                                        placeholder="Enter your password"
-                                        value={values.pass}
-                                        onChange={handleChange}
-                                        onBlur={handleBlur}
-                                        className={errors.pass && touched.pass &&"errors"}
-                                    />
-                                    {errors.pass && touched.pass && (
-                                        <div className="input-feedback">{errors.pass}</div>
-                                    )}
-                                    <div className="LoginButton">
-                                        <Row>
-                                            <Col md={4}>
-                                                <button type="submit" disabled={isSubmitting}>Go</button>
-                                            </Col>
-                                            <Col>
-                                                <Link to={"/forget"} style={{textDecoration: "none", color: "#00FF00"}}>
-                                                    <span>Forget password ?</span>
-                                                </Link>
-                                            </Col>
-                                        </Row>
-                                    </div>
-
-                                </form>
+                                    </form>
+                                </div>
+                                <div className="leftBar"/>
                             </div>
-                            <div className="leftBar"></div>
                         </div>
                     </div>
-                </div>
-            );
-        }}
-    </Formik>
-
-)
+                );
+            }}
+        </Formik>
+    )
+}
 
 export default ValidatedLogForm;
 

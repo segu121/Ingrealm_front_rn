@@ -4,8 +4,9 @@ import LeftButton from "./TopGridElements/LeftButton";
 import CentralButton from "./TopGridElements/CentralButton";
 import RightBottomBtn from "./TopGridElements/RightBotomBtn";
 import TextTopRight from "./TopGridElements/TextTopRight";
-import ImgToTopGrid from "./TopGridElements/image/ImgToTopGrid";
-import DescriptionApp from "./TopGridElements/textDivs/DescriptionApp";
+import ImgToPlainText from "./plainTextTop/elements/ImgToPlainText";
+import DescriptionApp from "./plainTextTop/elements/DescriptionApp";
+import ImgShop from './TopGridElements/image/ImageCosmetic'
 
 function TopGrid () {
 
@@ -13,9 +14,10 @@ function TopGrid () {
     return (
         <div className="Top-Grid-Function">
             <TextTopRight/>
-            <CentralButton/>
-            <ImgToTopGrid/>
-            <DescriptionApp/>
+            <ImgShop/>
+            {/*<CentralButton/>*/}
+            {/*<ImgToPlainText/>*/}
+            {/*<DescriptionApp/>*/}
         </div>
     );
 }

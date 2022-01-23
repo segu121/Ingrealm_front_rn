@@ -4,15 +4,17 @@
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 14% 14% 14% 14% 14% 14% 14%;
     grid-template-areas:
-    "photo photo photo textTop textTop"
-    "photo photo photo textTop textTop"
-    ". . . . ."
-    "img img img TG TG"
-    "img img img TG TG"
+    "textTop textTop photo photo photo"
+    "textTop textTop photo photo photo"
+    "textTop textTop photo photo photo"
+    ". . photo photo photo"
+    ". . photo photo photo"
     ". . . . ."
     ". . . . .";
     justify-items: center;
     align-items: center;
+    justify-content: center;
+    align-content: center;
     width: 99%;
 
 }
@@ -54,11 +56,20 @@
 .TextTopRight {
     grid-area: textTop;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     size: 1rem;
     width: 90%;
     height: 90%;
 
+}
+
+.changingTextDiv {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1fff8;
+    border-radius: 15px;
 }
 
 .centerText {
@@ -69,8 +80,8 @@
 
 
 
-.img-fluid {
-    grid-area: img;
+.ImgContainerTopGrid {
+    grid-area: photo;
 }
 
 .descriptionApp {

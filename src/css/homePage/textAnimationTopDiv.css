@@ -2,9 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    align-content: center;
     height: 200px;
     width: 99%;
-
+    background-color: #f1fff8;
 }
 
 .deconstructed {
@@ -13,9 +14,9 @@
     height: 0.90em;
     color: transparent;
     font-family: 'Cambay', sans-serif;
-    font-size: 8vw;
+    font-size: 2.5vw;
     font-weight: 200;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
     line-height: 0.94em;
 }
 
@@ -32,25 +33,25 @@
 .deconstructed > div:nth-child(1) {
     -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
     mask-image: linear-gradient(black 25%, transparent 25%);
-    animation: deconstructed1 4s infinite;
+    animation: deconstructed1 6s infinite;
 }
 
 .deconstructed > div:nth-child(2) {
     -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
     mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
-    animation: deconstructed2 4s infinite;
+    animation: deconstructed2 6s infinite;
 }
 
 .deconstructed > div:nth-child(3) {
     -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
     mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
-    animation: deconstructed3 4s infinite;
+    animation: deconstructed3 6s infinite;
 }
 
 .deconstructed > div:nth-child(4) {
     -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
     mask-image: linear-gradient(transparent 75%, black 75%);
-    animation: deconstructed4 4s infinite;
+    animation: deconstructed4 6s infinite;
 }
 
 @keyframes deconstructed1 {
@@ -61,7 +62,7 @@
         transform: translateX(0%);
     }
     83% {
-        transform: translateX(-0.1%);
+        transform: translateX(0%);
     }
     100% {
         transform: translateX(-120%);
@@ -73,10 +74,10 @@
         transform: translateX(100%);
     }
     24% {
-        transform: translateX(0.5%);
+        transform: translateX(0%);
     }
     82% {
-        transform: translateX(-0.2%);
+        transform: translateX(0%);
     }
     100% {
         transform: translateX(-125%);

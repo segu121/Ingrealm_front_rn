@@ -6,7 +6,7 @@ import TextTransition, {presets} from "react-text-transition";
 // import '../../../../../css/homePage/WriteTextAnimation.css';
 
 function TextRight () {
-    const textList = ["Zdjęcie", "Ocenę", "Zakup"]
+    const textList = ["ZDJĘCIE", "OCENĘ", "ZAKUP"]
     const {index} = useContext(TextContext);
 
 

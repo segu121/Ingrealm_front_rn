@@ -99,7 +99,7 @@ function FooterFunctionComponent () {
                 </MDBRow>
               </MDBContainer>
 
-              <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+              <div className='text-center p-3' style={{ backgroundColor: 'aquamarine', borderRadius: '15px' }}>
                   &copy; {new Date().getFullYear()}{' '}
                   <a className='text-dark' href='https://mdbootstrap.com/'>
                       Ingrealm Society
