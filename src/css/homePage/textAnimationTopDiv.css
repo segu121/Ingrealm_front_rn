@@ -16,7 +16,7 @@
     font-family: 'Cambay', sans-serif;
     font-size: 2.5vw;
     font-weight: 200;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
     line-height: 0.94em;
 }
 
@@ -62,7 +62,7 @@
         transform: translateX(0%);
     }
     83% {
-        transform: translateX(-0.1%);
+        transform: translateX(0%);
     }
     100% {
         transform: translateX(-120%);
@@ -74,10 +74,10 @@
         transform: translateX(100%);
     }
     24% {
-        transform: translateX(0.5%);
+        transform: translateX(0%);
     }
     82% {
-        transform: translateX(-0.2%);
+        transform: translateX(0%);
     }
     100% {
         transform: translateX(-125%);

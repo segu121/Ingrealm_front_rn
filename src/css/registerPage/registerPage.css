@@ -1,36 +1,44 @@
-.loginPage {
+.registerPage {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 99vw;
-    height: 900px;
+    height: 1200px;
 }
 
-.formsContainer {
+.registerFormsContainer {
     padding: 5px 5px 5px 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
-    height: 50%;
-    /*background-color: darkseagreen;*/
-
+    width: 70%;
+    height: 70%;
 }
 
-.leftBar {
-    width: 25%;
-    height: 100%;
+.regLeftBar {
+    width: 20%;
+    height: 50%;
     background-color: aquamarine;
     border: #00FF00 solid 1px;
     border-radius: 5px;
 }
 
-.loginButton {
+/*.input-feedback{*/
+/*    color: dodgerblue;*/
+/*}*/
+
+.registerButton {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     justify-items: center;
     align-items: center;
+}
+
+.submitRegisterBtn {
+ width: 80%;
 }
 
 .textShow {
 
 }
-

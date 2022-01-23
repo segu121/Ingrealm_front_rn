@@ -8,32 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f426e244-ab0b-4a27-8960-460dc677a49a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/image/ImageCosmetic.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/divBetween/DivBetweenScanText.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/plainTextTop/ShowPlainText.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/homePage/divBetween.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/homePage/showPlainText.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/registerPage/registerPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/containers/HomePageMidContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/HomePageMidContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/footer/FooterFunctionComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/footer/FooterFunctionComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGrid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/TextTopRight.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/TextTopRight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/TopDivFancyText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/TopDivFancyText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/image/ImgToTopGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/plainTextTop/elements/ImgToPlainText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/homePage/TopGridElements/textDivs/DescriptionApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/plainTextTop/elements/DescriptionApp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/ScanButtonWithText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/ScanButtonWithText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/elements/TextLeft.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/elements/TextLeft.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/elements/TextRight.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/homePage/scanButtonElements/elements/TextRight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/toHeader/LoginFuncComp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/toHeader/LoginFuncComp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/toHeader/RegisterFuncComp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/toHeader/RegisterFuncComp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/headers/headerBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/headers/headerBar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/homePage/centralButtonCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/homePage/centralButtonCss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/homePage/homePageContainer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/homePage/homePageContainer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/ValidatedLogForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/ValidatedLogForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/ValidatedRegisterForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/ValidatedRegisterForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/homePage/scanText.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/homePage/scanText.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/homePage/textAnimation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/homePage/textAnimation.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/homePage/textAnimationTopDiv.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/homePage/textAnimationTopDiv.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/homePage/topGrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/homePage/topGrid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/midContainer/midContainer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/midContainer/midContainer.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/login_page/loginPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/login_page/loginPage.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +112,9 @@
       <workItem from="1642450395857" duration="1641000" />
       <workItem from="1642528337133" duration="289000" />
       <workItem from="1642678783330" duration="7062000" />
-      <workItem from="1642692808391" duration="13714000" />
+      <workItem from="1642692808391" duration="13989000" />
+      <workItem from="1642791243974" duration="15683000" />
+      <workItem from="1642943001582" duration="3375000" />
     </task>
     <servers />
   </component>
