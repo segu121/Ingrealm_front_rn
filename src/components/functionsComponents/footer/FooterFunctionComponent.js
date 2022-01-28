@@ -6,7 +6,7 @@ function FooterFunctionComponent () {
 
     return (
       <div className="footer">
-          <MDBFooter backgroundColor='light' className='text-center text-lg-left'>
+          <MDBFooter backgroundcolor='light' className='text-center text-lg-left'>
               <MDBContainer className='p-3'>
                 <MDBRow>
                     <MDBCol lg='6' md='12' className='mb-4 mb-md-0'>
@@ -22,22 +22,22 @@ function FooterFunctionComponent () {
 
                         <ul className='list-unstyled mb-0'>
                             <li>
-                                <a href='#!' className='text-dark'>
+                                <a href='#' className='text-dark'>
                                     Link 1
                                 </a>
                             </li>
                             <li>
-                                <a href='#!' className='text-dark'>
+                                <a href='#' className='text-dark'>
                                     Link 2
                                 </a>
                             </li>
                             <li>
-                                <a href='#!' className='text-dark'>
+                                <a href='#' className='text-dark'>
                                     Link 3
                                 </a>
                             </li>
                             <li>
-                                <a href='#!' className='text-dark'>
+                                <a href='#' className='text-dark'>
                                     Link 4
                                 </a>
                             </li>
@@ -49,22 +49,22 @@ function FooterFunctionComponent () {
 
                         <ul className='list-unstyled'>
                             <li>
-                                <a href='#!' className='text-dark'>
+                                <a href='#' className='text-dark'>
                                     Link 1
                                 </a>
                             </li>
                             <li>
-                                <a href='#!' className='text-dark'>
+                                <a href='#' className='text-dark'>
                                     Link 2
                                 </a>
                             </li>
                             <li>
-                                <a href='#!' className='text-dark'>
+                                <a href='#' className='text-dark'>
                                     Link 3
                                 </a>
                             </li>
                             <li>
-                                <a href='#!' className='text-dark'>
+                                <a href='#' className='text-dark'>
                                     Link 4
                                 </a>
                             </li>
@@ -75,22 +75,22 @@ function FooterFunctionComponent () {
 
                         <ul className='list-unstyled'>
                             <li>
-                                <a href='#!' className='text-dark'>
+                                <a href='#' className='text-dark'>
                                     Link 1
                                 </a>
                             </li>
                             <li>
-                                <a href='#!' className='text-dark'>
+                                <a href='#' className='text-dark'>
                                     Link 2
                                 </a>
                             </li>
                             <li>
-                                <a href='#!' className='text-dark'>
+                                <a href='#' className='text-dark'>
                                     Link 3
                                 </a>
                             </li>
                             <li>
-                                <a href='#!' className='text-dark'>
+                                <a href='#' className='text-dark'>
                                     Link 4
                                 </a>
                             </li>
