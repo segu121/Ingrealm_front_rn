@@ -2,14 +2,16 @@ import {Button, ButtonGroup, Container, Table} from "reactstrap";
 import {Link} from "react-router-dom";
 import "./ingredientList.css"
 import PaginationComponent from "./PaginationComponent";
+import SearchBar from "./SearchBar";
 import {useEffect, useState} from "react";
-import {Pagination} from "react-bootstrap";
+
 
 function IngredientList(props) {
 
     const [state, setState] = useState({ingredients: []});
     const [currentPage, setCurrentPage] = useState(1);
-    const [ingPerPage, setIngPerPage] = useState(50);
+    const [ingPerPage, setIngPerPage] = useState(25);
+    const [searchTerm, setSearchTerm] = useState("");
 
     useEffect(() => {
         console.log(props)
@@ -70,9 +72,10 @@ function IngredientList(props) {
     }
 
     return (
-        <div>
+        <div className="IngredientsList">
+            <SearchBar placeholder="Enter a INCI name..." data={ingredients}/>
             <Container fluid>
-                <div className="float-right">
+                <div className="add-btn">
                     <Button color="success" tag={Link} to="/ingredients/new">Add Ingredient</Button>
                 </div>
                 <h3>Ingredients</h3>
@@ -90,15 +93,15 @@ function IngredientList(props) {
                     </tr>
                     </thead>
                     <tbody>
-                    {currentIngredients}
+                        {currentIngredients}
                     </tbody>
                 </Table>
-                    <PaginationComponent
-                        ingredientsPerPage={ingPerPage}
-                        totalIngredients={ingredients.length}
-                        paginate={paginate}
-                    />
             </Container>
+            <PaginationComponent
+                ingredientsPerPage={ingPerPage}
+                totalIngredients={ingredients.length}
+                paginate={paginate}
+            />
         </div>
     );
 }

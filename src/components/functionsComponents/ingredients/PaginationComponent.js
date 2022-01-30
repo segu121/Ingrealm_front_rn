@@ -1,4 +1,5 @@
 import React from "react";
+import "./ingredientList.css"
 
 const PaginationComponent = ({ ingredientsPerPage, totalIngredients, paginate }) => {
     const pageNumbers = [];
@@ -8,7 +9,7 @@ const PaginationComponent = ({ ingredientsPerPage, totalIngredients, paginate })
     }
     return (
         <nav>
-            <ul className="pagination justify-content-center">
+            <ul className="pagination justify-content-center container">
                 {pageNumbers.map(number => (
                     <li key={number} className="page-item">
                         <a onClick={() => paginate(number)} href="#ingredients" className="page-link">
