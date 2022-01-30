@@ -4,8 +4,8 @@ import { Route, Routes} from 'react-router-dom';
 import HomePageMidContainer from "./containers/HomePageMidContainer";
 import ValidatedLogForm from "./functionsComponents/ValidatedLogForm";
 import Admin from './classComponents/Admin';
-import IngredientEdit from "./classComponents/IngredientEdit";
-import IngredientList from "./classComponents/IngredientList";
+import IngredientEdit from "./functionsComponents/ingredients/IngredientEdit";
+import IngredientList from "./functionsComponents/ingredients/IngredientList";
 import ImageLoader from "./imageLoader/imageLoader";
 
 import ValidatedRegisterForm from "./functionsComponents/ValidatedRegisterForm";

@@ -1,11 +1,15 @@
 import {Button, ButtonGroup, Container, Table} from "reactstrap";
 import {Link} from "react-router-dom";
 import "./ingredientList.css"
+import PaginationComponent from "./PaginationComponent";
 import {useEffect, useState} from "react";
+import {Pagination} from "react-bootstrap";
 
 function IngredientList(props) {
 
     const [state, setState] = useState({ingredients: []});
+    const [currentPage, setCurrentPage] = useState(1);
+    const [ingPerPage, setIngPerPage] = useState(50);
 
     useEffect(() => {
         console.log(props)
@@ -33,17 +37,17 @@ function IngredientList(props) {
 
     const {ingredients, isLoading} = state;
 
-    if(isLoading) {
+    if (isLoading) {
         return <p>Loading...</p>;
     }
 
     const ingredientsList = ingredients.map(ingredient => {
         return <tr key={ingredient.id}>
             <td>{ingredient.id}</td>
-            <td style={{whiteSpace: 'nowrap'}}>{ingredient.name}</td>
+            <td>{ingredient.name}</td>
             <td>{ingredient.inciname}</td>
             <td>{ingredient.category}</td>
-            <td>{ingredient.description}</td>
+            <td style={{display: "flex", maxHeight: '200px', overflow: "auto"}}>{ingredient.description}</td>
             <td>{ingredient.naturalRating}</td>
             <td>{ingredient.rating}</td>
             <td>
@@ -54,6 +58,16 @@ function IngredientList(props) {
             </td>
         </tr>
     });
+
+    //Get current ingredients
+    const indexOfLastIngredient = currentPage * ingPerPage;
+    const indexOfFirstPost = indexOfLastIngredient - ingPerPage;
+    const currentIngredients = ingredientsList.slice(indexOfFirstPost, indexOfLastIngredient);
+
+    // Change page
+    const paginate = pageNumber => {
+        setCurrentPage(pageNumber);
+    }
 
     return (
         <div>
@@ -66,19 +80,24 @@ function IngredientList(props) {
                     <thead>
                     <tr>
                         <th width="5%">ID</th>
-                        <th width="20%">Name</th>
+                        <th width="5%">Name</th>
                         <th width="15%">INCI Name</th>
-                        <th width="10%">Category</th>
-                        <th width="30%">Description</th>
+                        <th width="20%">Category</th>
+                        <th width="35%">Description</th>
                         <th width="5%">Nat. Rat.</th>
                         <th width="5%">Rating</th>
                         <th width="10%">Actions</th>
                     </tr>
                     </thead>
                     <tbody>
-                    {ingredientsList}
+                    {currentIngredients}
                     </tbody>
                 </Table>
+                    <PaginationComponent
+                        ingredientsPerPage={ingPerPage}
+                        totalIngredients={ingredients.length}
+                        paginate={paginate}
+                    />
             </Container>
         </div>
     );
