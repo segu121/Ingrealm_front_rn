@@ -1,11 +1,15 @@
 import {Button, ButtonGroup, Container, Table} from "reactstrap";
 import {Link} from "react-router-dom";
 import "./ingredientList.css"
+import PaginationComponent from "./PaginationComponent";
 import {useEffect, useState} from "react";
+import {Pagination} from "react-bootstrap";
 
 function IngredientList(props) {
 
     const [state, setState] = useState({ingredients: []});
+    const [currentPage, setCurrentPage] = useState(1);
+    const [ingPerPage, setIngPerPage] = useState(50);
 
     useEffect(() => {
         console.log(props)
@@ -33,7 +37,7 @@ function IngredientList(props) {
 
     const {ingredients, isLoading} = state;
 
-    if(isLoading) {
+    if (isLoading) {
         return <p>Loading...</p>;
     }
 
@@ -43,7 +47,7 @@ function IngredientList(props) {
             <td>{ingredient.name}</td>
             <td>{ingredient.inciname}</td>
             <td>{ingredient.category}</td>
-            <td style={{display: "flex", maxHeight: '300px', overflow: "auto"}}>{ingredient.description}</td>
+            <td style={{display: "flex", maxHeight: '200px', overflow: "auto"}}>{ingredient.description}</td>
             <td>{ingredient.naturalRating}</td>
             <td>{ingredient.rating}</td>
             <td>
@@ -54,6 +58,16 @@ function IngredientList(props) {
             </td>
         </tr>
     });
+
+    //Get current ingredients
+    const indexOfLastIngredient = currentPage * ingPerPage;
+    const indexOfFirstPost = indexOfLastIngredient - ingPerPage;
+    const currentIngredients = ingredientsList.slice(indexOfFirstPost, indexOfLastIngredient);
+
+    // Change page
+    const paginate = pageNumber => {
+        setCurrentPage(pageNumber);
+    }
 
     return (
         <div>
@@ -76,9 +90,14 @@ function IngredientList(props) {
                     </tr>
                     </thead>
                     <tbody>
-                    {ingredientsList}
+                    {currentIngredients}
                     </tbody>
                 </Table>
+                    <PaginationComponent
+                        ingredientsPerPage={ingPerPage}
+                        totalIngredients={ingredients.length}
+                        paginate={paginate}
+                    />
             </Container>
         </div>
     );
