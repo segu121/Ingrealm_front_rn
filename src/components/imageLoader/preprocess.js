@@ -3,10 +3,10 @@ function preprocessImage(canvas) {
         canvas
             .getContext('2d')
             .getImageData(0,0,canvas.width, canvas.height);
-    blurARGB(processedImageData.data, canvas, 1);
+    blurARGB(processedImageData.data, canvas, 0.5);
     dilate(processedImageData.data, canvas);
     invertColors(processedImageData.data);
-    thresholdFilter(processedImageData.data, 0.4);
+    thresholdFilter(processedImageData.data, 0.5);
     return processedImageData;
 }
 

@@ -1,6 +1,6 @@
 import {Button, ButtonGroup, Container, Table} from "reactstrap";
 import {Link} from "react-router-dom";
-import "./ingredientList.css"
+import "./ingredientList.css";
 import PaginationComponent from "./PaginationComponent";
 import SearchBar from "./SearchBar";
 import {useEffect, useState} from "react";
@@ -11,7 +11,25 @@ function IngredientList(props) {
     const [state, setState] = useState({ingredients: []});
     const [currentPage, setCurrentPage] = useState(1);
     const [ingPerPage, setIngPerPage] = useState(25);
-    const [searchTerm, setSearchTerm] = useState("");
+    const [searchIng, setSearchIng] = useState("");
+
+    const displayResult = () => { // handleChange???
+
+        if (searchIng === "") {
+            return currentIngredients
+        } else {
+
+            const displayFilter = ingredients.filter(e => e.inciname.toUpperCase().includes(searchIng.toUpperCase()))
+                .map(value => {
+                    return ingredientToComponent(value);
+                })
+
+            // }
+            console.log(displayFilter)
+            return displayFilter;
+        }
+    }
+
 
     useEffect(() => {
         console.log(props)
@@ -43,25 +61,35 @@ function IngredientList(props) {
         return <p>Loading...</p>;
     }
 
-    const ingredientsList = ingredients.map(ingredient => {
-        return <tr key={ingredient.id}>
-            <td>{ingredient.id}</td>
-            <td>{ingredient.name}</td>
-            <td>{ingredient.inciname}</td>
-            <td>{ingredient.category}</td>
-            <td style={{display: "flex", maxHeight: '200px', overflow: "auto"}}>{ingredient.description}</td>
-            <td>{ingredient.naturalRating}</td>
-            <td>{ingredient.rating}</td>
-            <td>
-                <ButtonGroup>
-                    <Button size="sm" color="primary" tag={Link} to={"/ingredients/" + ingredient.id}>Edit</Button>
-                    <Button size="sm" color="danger" onClick={() => remove(ingredient.id)}>Delete</Button>
-                </ButtonGroup>
-            </td>
-        </tr>
+    // jeżeli słowo jest puste to tylko mapujemy, w przeciwnym razie jeszcze filtrujemy
+    // paginacja po wyszukiwaniu powinna wracać do pierwotnego stanu
+    // jak połączyć SearchBar? przekazać hooka w parametrze
+    const ingredientsList = ingredients.map((value) => {
+        return ingredientToComponent(value)
     });
 
-    //Get current ingredients
+    function ingredientToComponent(ingredient) {
+        return (
+            <tr key={ingredient.id}>
+                <td>{ingredient.id}</td>
+                <td>{ingredient.name}</td>
+                <td>{ingredient.inciname}</td>
+                <td>{ingredient.category}</td>
+                <td style={{display: "flex", maxHeight: '200px', overflow: "auto"}}>{ingredient.description}</td>
+                <td>{ingredient.naturalRating}</td>
+                <td>{ingredient.rating}</td>
+                <td>
+                    <ButtonGroup>
+                        <Button size="sm" color="primary" tag={Link} to={"/ingredients/" + ingredient.id}>Edit</Button>
+                        <Button size="sm" color="danger" onClick={() => remove(ingredient.id)}>Delete</Button>
+                    </ButtonGroup>
+                </td>
+            </tr>
+        )
+
+    }
+
+    //Get current ingredients (pagination)
     const indexOfLastIngredient = currentPage * ingPerPage;
     const indexOfFirstPost = indexOfLastIngredient - ingPerPage;
     const currentIngredients = ingredientsList.slice(indexOfFirstPost, indexOfLastIngredient);
@@ -71,9 +99,21 @@ function IngredientList(props) {
         setCurrentPage(pageNumber);
     }
 
+    const selectedIng = (e) => {
+        console.log(e)
+        setSearchIng(e);
+        // setSelectedWord(e);
+        // console.log(selectedWord)
+    }
+
     return (
         <div className="IngredientsList">
-            <SearchBar placeholder="Enter a INCI name..." data={ingredients}/>
+            <SearchBar
+                placeholder="Enter a INCI name..."
+                data={ingredients}
+                // wordToSend={(searchIng => setSearchIng(searchIng))}
+                newArg={selectedIng}
+            />
             <Container fluid>
                 <div className="add-btn">
                     <Button color="success" tag={Link} to="/ingredients/new">Add Ingredient</Button>
@@ -93,7 +133,8 @@ function IngredientList(props) {
                     </tr>
                     </thead>
                     <tbody>
-                        {currentIngredients}
+                    {displayResult()}
+                    {/*{currentIngredients}*/}
                     </tbody>
                 </Table>
             </Container>
@@ -106,4 +147,4 @@ function IngredientList(props) {
     );
 }
 
-export default IngredientList;
+export default IngredientList
