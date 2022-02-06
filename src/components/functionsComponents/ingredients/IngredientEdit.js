@@ -1,24 +1,35 @@
-import React, { useEffect, useState} from 'react';
-import { Link } from 'react-router-dom';
-import { Button, Container, Form, FormGroup, Input, Label } from 'reactstrap';
-import { useParams, useNavigate } from "react-router";
+import React, {useEffect, useState} from 'react';
+import {Link} from 'react-router-dom';
+import {Button, Container, Form, FormGroup, Input, Label} from 'reactstrap';
+import {useNavigate, useParams} from "react-router";
 import axios from "axios";
+import Creatable from 'react-select/creatable';
 
 
-function IngredientEdit(props){
+function IngredientEdit(props) {
 
     let [item, setItem] = useState({
         name: '',
-        naturalRating: '',
-        description: '',
         inciname: '',
+        // categories: '',
+        description: '',
+        naturalRating: '',
         rating: '',
     });
-    let { id } = useParams();
+
+    const [categoryHook, setCategoryHook] = useState([]);
+
+    let {id} = useParams();
     const history = useNavigate();
 
+    React.useEffect(() => {
+        axios.get(`/categories`).then((response) => {
+            setCategoryHook(response.data)
+        })
+    }, []);
 
-    useEffect( () => {
+
+    useEffect(() => {
         console.log(props);
         if (id !== 'new') {
             axios.get(`/ingredients/${id}`)
@@ -26,7 +37,7 @@ function IngredientEdit(props){
                     setItem(response.data)
                 });
         }
-    },[]);
+    }, []);
 
     const handleChange = (e) => {
         const target = e.target;
@@ -48,15 +59,15 @@ function IngredientEdit(props){
             },
             body: JSON.stringify(item),
         });
-        history('../ingredients', { replace : true }); //tu było history.push('/path');
+        history('../ingredients', {replace: true});
     }
 
 
-        // const {item} = this.state;
-        const title = <h2>{item.id ? 'Edit Ingredient' : 'Add Ingredient'}</h2>;
+    // const {item} = this.state;
+    const title = <h2>{item.id ? 'Edit Ingredient' : 'Add Ingredient'}</h2>;
 
-        return (
-            <div>
+    return (
+        <div>
             <Container>
                 {title}
                 <Form onSubmit={handleSubmit}>
@@ -66,9 +77,9 @@ function IngredientEdit(props){
                                onChange={handleChange} autoComplete="name"/>
                     </FormGroup>
                     <FormGroup>
-                        <Label for="naturalRating">Natural Rating</Label>
-                        <Input type="number" name="naturalRating" id="naturalRating" value={item.naturalRating || ''}
-                               onChange={handleChange} autoComplete="naturalRating"/>
+                        <Label for="inciname">INCI Name</Label>
+                        <Input type="text" name="inciname" id="inciname" value={item.inciname || ''}
+                               onChange={handleChange} autoComplete="inciname"/>
                     </FormGroup>
                     <FormGroup>
                         <Label for="description">Description</Label>
@@ -76,9 +87,24 @@ function IngredientEdit(props){
                                onChange={handleChange} autoComplete="description"/>
                     </FormGroup>
                     <FormGroup>
-                        <Label for="inciname">INCI Name</Label>
-                        <Input type="text" name="inciname" id="inciname" value={item.inciname || ''}
-                               onChange={handleChange} autoComplete="inciname"/>
+                        <Label for="categories">Category</Label>
+                        {/*<Input type="text" name="categories" id="categories" value={item.categories || ''}*/}
+                        {/*       onChange={handleChange} autoComplete="categories"/>*/}
+                        <Creatable
+                            name="categories" id="categories"
+                            options={categoryHook.map(category => ({
+                                            "label": category.name,
+                                            "value": category.name
+                                        }))}
+                            isMulti
+                            // onChange={handleChange}
+                            onChange={(opt, meta) => console.log(opt, meta)}
+                        />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="naturalRating">Natural Rating</Label>
+                        <Input type="number" name="naturalRating" id="naturalRating" value={item.naturalRating || ''}
+                               onChange={handleChange} autoComplete="naturalRating"/>
                     </FormGroup>
                     <FormGroup>
                         <Label for="rating">Rating</Label>
@@ -92,6 +118,7 @@ function IngredientEdit(props){
                 </Form>
             </Container>
         </div>
-        );
+    );
 }
+
 export default IngredientEdit;

@@ -4,8 +4,10 @@ import { Route, Routes} from 'react-router-dom';
 import HomePageMidContainer from "./containers/HomePageMidContainer";
 import ValidatedLogForm from "./functionsComponents/ValidatedLogForm";
 import Admin from './classComponents/Admin';
-import IngredientEdit from "./classComponents/IngredientEdit";
-import IngredientList from "./classComponents/IngredientList";
+import IngredientEdit from "./functionsComponents/ingredients/IngredientEdit";
+import IngredientList from "./functionsComponents/ingredients/IngredientList";
+import ImageLoader from "./imageLoader/imageLoader";
+
 import ValidatedRegisterForm from "./functionsComponents/ValidatedRegisterForm";
 
 function IngrealmDomRouter() {
@@ -16,7 +18,8 @@ function IngrealmDomRouter() {
             <Route path="register-page" element={<ValidatedRegisterForm/>}/>
             <Route path='/ingredients' element={<Admin/>} />
             <Route path='/ingredients/:id' element={<IngredientEdit/>} />
-            <Route exact path='/ingredients' element={<IngredientList/>} />
+            {/*<Route exact path='/ingredients' element={<IngredientList/>} />*/}
+            <Route path="/scan" element={<ImageLoader/>}/>
         </Routes>
     );
 }

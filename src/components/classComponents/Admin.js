@@ -1,6 +1,6 @@
 import React from 'react'
 import { Component } from 'react';
-import IngredientList from "./IngredientList";
+import IngredientList from "../functionsComponents/ingredients/IngredientList";
 
 class Admin extends Component {
 
