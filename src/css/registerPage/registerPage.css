@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     width: 99vw;
-    height: 1200px;
+    height: 900px;
 }
 
 .registerFormsContainer {
@@ -17,7 +17,7 @@
 
 .regLeftBar {
     width: 20%;
-    height: 50%;
+    height: 100%;
     background-color: aquamarine;
     border: #00FF00 solid 1px;
     border-radius: 5px;

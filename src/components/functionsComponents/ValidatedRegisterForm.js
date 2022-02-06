@@ -1,12 +1,11 @@
 import React, {useEffect} from "react";
-// import * as EmailValidation from 'email-validator';
 import { Formik} from "formik";
 import * as Yup from 'yup';
 import axios from "axios";
-
 import errors from "./Errors";
-import {Col, FloatingLabel, Form, Row} from "react-bootstrap";
+import {Col, Row} from "react-bootstrap";
 import '../../css/registerPage/registerPage.css'
+
 
 
 
@@ -101,7 +100,7 @@ function ValidatedRegisterForm() {
                                             <Col>
                                                 <label htmlFor="checkEmail">Repeat email</label>
                                                 <input
-                                                    name="email"
+                                                    name="checkEmail"
                                                     type="text"
                                                     placeholder="Repeat email"
                                                     value={values.checkEmail}
@@ -151,7 +150,7 @@ function ValidatedRegisterForm() {
                                             <Col>
                                                 <label htmlFor="checkPass">Repeat password</label>
                                                 <input
-                                                    name="pass"
+                                                    name="checkPass"
                                                     type="password"
                                                     placeholder="Repeat password"
                                                     value={values.checkPass}
@@ -178,7 +177,7 @@ function ValidatedRegisterForm() {
                                             <Col>
                                                 <label htmlFor="nick">Your nick</label>
                                                 <input
-                                                    name="pass"
+                                                    name="nick"
                                                     type="text"
                                                     placeholder="Your nick"
                                                     value={values.nick}

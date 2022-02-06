@@ -8,13 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f426e244-ab0b-4a27-8960-460dc677a49a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/css/registerPage/registerPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/registerPage/registerForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/ValidatedLogForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/ValidatedLogForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/functionsComponents/ValidatedRegisterForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functionsComponents/ValidatedRegisterForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/homePage/scanText.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/homePage/scanText.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/homePage/textAnimationTopDiv.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/homePage/textAnimationTopDiv.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/login_page/loginPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/login_page/loginPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/headers/headerBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/headers/headerBar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/registerPage/registerPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/registerPage/registerPage.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +114,9 @@
       <workItem from="1642678783330" duration="7062000" />
       <workItem from="1642692808391" duration="13989000" />
       <workItem from="1642791243974" duration="15683000" />
-      <workItem from="1642943001582" duration="3375000" />
+      <workItem from="1642943001582" duration="6697000" />
+      <workItem from="1643132187733" duration="20000" />
+      <workItem from="1643132247510" duration="114000" />
     </task>
     <servers />
   </component>

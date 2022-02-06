@@ -11,7 +11,7 @@ import FooterFunctionComponent from './components/functionsComponents/footer/Foo
 
 function App() {
   return (
-    <div className="container-fluid" style={{justifyContent:"center", display:"grid"}} >
+    <div className="container-fluid" style={{justifyContent:"center"/**, display:"grid"*/}} >
         <Header/>
         {/*<AlertFuncComp/>*/}
         <IngrealmDomRouter/>
